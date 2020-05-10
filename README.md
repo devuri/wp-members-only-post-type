@@ -1,2 +1,2 @@
-## Password Protected Post Type
-Password Protected Post Type protect any post type with a password.
+## Members Only Post Type
+Protected Post Type protect posttypes.
