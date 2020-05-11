@@ -39,12 +39,13 @@ if (!class_exists('WPAdminPage\Admin\Form\FormHelper')) {
      * @param  string $class   the css class
      * @param  string $message output message
      * @return string
+     * @link https://developer.wordpress.org/reference/hooks/admin_notices/
      */
-    public function user_feedback($message = 'Options updated', $class = 'updated'){
+    public function user_feedback($message = 'Options updated', $class = 'success'){
 
       //$message = 'Options updated';
 
-      $user_message  = '<div style="font-size: small; text-transform: capitalize;" id="user-feedback" class="'.$class.' notice notice-my-class is-dismissible">';
+      $user_message  = '<div style="font-size: small; text-transform: capitalize;" id="user-feedback" class="notice notice-'.$class.' is-dismissible">';
       $user_message .= '<p>';
       $user_message .= $message;
       $user_message .= '</p>';
