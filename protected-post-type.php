@@ -103,10 +103,6 @@ final class Protected_Post_Type {
 		     */
 		    if (in_array( $post->post_type, $this->protected_ptypes() ) ) {
 		      return $this->members_only_message();
-          /**
-           * lets also disable comments
-           * @var [type]
-           */
 		    } else {
 		      return $content;
 		    }
@@ -119,7 +115,7 @@ final class Protected_Post_Type {
 	 * @return [type] [description]
 	 */
 	private function protected_ptypes(){
-    $protected = get_option('wp_protected_post_type');
+    $protected = get_option('wp_protected_post_types');
 		return $protected;
 	}
 
