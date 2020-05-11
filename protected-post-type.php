@@ -5,7 +5,7 @@
  * Description: Members Only Post Type will Protected Post Types
  * Author:      SwitchWebdev.com
  * Author URI:  https://switchwebdev.com
- * Version:     1.0.2
+ * Version:     1.0.3
  * License:     GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: members-only-post-type
@@ -107,17 +107,7 @@ final class Protected_Post_Type {
 	 * @return [type] [description]
 	 */
 	private function protected_ptypes(){
-		$protected = array(
-			'post',
-			'case',
-			'statute',
-			'gazette',
-			'bill',
-			'regulation',
-			'treaty',
-			'dispute',
-			'saved'
-		);
+    $protected = get_option('wp_protected_post_type');
 		return $protected;
 	}
 
@@ -171,6 +161,8 @@ final class Protected_Post_Type {
 	 * @var [type]
 	 */
 	new Protected_Post_Type();
+
+
 
 #------------------------------------------------------------------------------
 /**
