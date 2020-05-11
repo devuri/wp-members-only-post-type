@@ -12,7 +12,7 @@ final class Protected_Post_Type_Admin extends AdminPage {
   private static function admin_menu(){
     $menu = array();
     $menu[] = 'Protected Post Type Settings';
-    $menu[] = 'Protected Types';
+    $menu[] = 'Protected Posts';
     $menu[] = 'manage_options';
     $menu[] = 'protected-post-type';
     $menu[] = 'protectedposttypes_callback';
