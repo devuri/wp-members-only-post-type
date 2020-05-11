@@ -67,7 +67,7 @@
      * @var [type]
      */
     echo '<div '.$ptt_status.' id="ppt_wrap '.$post_type->name.'" >';
-    echo '<span '.$dashicon_style.' class="wp-menu-image dashicons-before '.$post_type->menu_icon.'"></span>';
+    echo '<span '.$dashicon_style.' class="wp-menu-image wll-small-admin-dashicons '.$post_type->menu_icon.'"></span>';
     echo '<input type="checkbox" name="pptname['.$post_type->name.']" value="'.$post_type->name.'" '.$checkprotected.'>';
     echo '<label for="'.$post_type->name.'">';
     echo $post_type->labels->singular_name;
