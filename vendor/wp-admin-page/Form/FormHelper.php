@@ -36,7 +36,7 @@ if (!class_exists('WPAdminPage\Admin\Form\FormHelper')) {
      *
      * give the user some feedback
      *
-     * @param  string $class   the css class
+     * @param  string $class the css class (success | info | warning | error)
      * @param  string $message output message
      * @return string
      * @link https://developer.wordpress.org/reference/hooks/admin_notices/
