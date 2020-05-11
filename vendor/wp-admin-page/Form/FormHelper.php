@@ -6,7 +6,7 @@ namespace WPAdminPage\Admin\Form;
  * ----------------------------------------------------------------------------
  * @copyright 	Copyright © 2020 Uriel Wilson.
  * @package   	FormHelper
- * @version   	1.0.2
+ * @version   	1.0.9
  * @license   	GPL-2.0+
  * @author    	Uriel Wilson
  * @link      	https://github.com/devuri/wp-admin-page/
@@ -23,7 +23,7 @@ if (!class_exists('WPAdminPage\Admin\Form\FormHelper')) {
     /**
      * class version
      */
-    const ADMINVERSION = '1.0.2';
+    const ADMINVERSION = '1.0.9';
 
     /**
      * processing
