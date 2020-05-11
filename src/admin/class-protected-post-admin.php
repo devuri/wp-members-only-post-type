@@ -11,7 +11,7 @@ final class Protected_Post_Type_Admin extends AdminPage {
    */
   private static function admin_menu(){
     $menu = array();
-    $menu[] = 'Protected Post Type Settings';
+    $menu[] = 'Members Only Post Type Settings';
     $menu[] = 'Protected Posts';
     $menu[] = 'manage_options';
     $menu[] = 'protected-post-type';
@@ -22,7 +22,6 @@ final class Protected_Post_Type_Admin extends AdminPage {
     $menu[] = plugin_dir_path( __FILE__ );
     return $menu;
   }
-
 
   /**
    * init
