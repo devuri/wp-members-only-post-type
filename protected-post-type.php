@@ -177,7 +177,6 @@ final class Protected_Post_Type {
  * @var [type]
  */
 require_once WPMPT_DIR . '/vendor/wp-admin-page/AdminPage.php';
-require_once WPMPT_DIR . '/vendor/wp-admin-page/Form/FormHelper.php';
 
 // admin page
 require_once plugin_dir_path( __FILE__ ). 'src/admin/class-protected-post-admin.php';
