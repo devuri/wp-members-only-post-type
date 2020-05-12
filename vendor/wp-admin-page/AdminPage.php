@@ -15,7 +15,14 @@ use WPAdminPage\Admin\Form\FormHelper as Form;
  * ----------------------------------------------------------------------------
  */
 
-if (!defined('ABSPATH')) exit;
+  if (!defined('ABSPATH')) exit;
+
+
+  /**
+   * Load the FormHelper class
+   * @var object
+   */
+  require_once plugin_dir_path( __FILE__ ) . 'Form/FormHelper.php';
 
 
 if (!class_exists('WPAdminPage\AdminPage')) {
