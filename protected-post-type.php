@@ -153,10 +153,10 @@ final class Protected_Post_Type {
 
     $ppt_css = "/** inline **/
       .ppt-black{
-              background:#333333;
+        background:#333333;
       }
       .ppt-blue{
-              background:#037DBB;
+        background:#037DBB;
       }
       /** inline **/";
     wp_add_inline_style( 'protected-post-type', $ppt_css );
