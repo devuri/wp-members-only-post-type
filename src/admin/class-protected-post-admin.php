@@ -3,6 +3,7 @@
 use WPAdminPage\AdminPage;
 
 final class Protected_Post_Type_Admin extends AdminPage {
+
   /**
    * admin_menu()
    *
@@ -11,6 +12,7 @@ final class Protected_Post_Type_Admin extends AdminPage {
    */
   private static function admin_menu(){
     $menu = array();
+    $menu[] = '#ba315c';
     $menu[] = 'Members Only Post Type Settings';
     $menu[] = 'Protected Posts';
     $menu[] = 'manage_options';
@@ -31,6 +33,5 @@ final class Protected_Post_Type_Admin extends AdminPage {
     return new Protected_Post_Type_Admin(self::admin_menu());
   }
 }
-
   // create admin pages
   Protected_Post_Type_Admin::init();
