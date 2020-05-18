@@ -77,7 +77,7 @@
     echo '<span '.$dashicon_style.' class="wp-menu-image wll-small-admin-dashicons '.$post_type->menu_icon.'"></span>';
     echo '<input type="checkbox" name="pptname['.$post_type->name.']" value="'.$post_type->name.'" '.$checkprotected.'>';
     echo '<label for="'.$post_type->name.'">';
-    echo $post_type->labels->singular_name;
+    _e($post_type->labels->singular_name);
     echo '</label>';
     echo '</div>';
   } // end foreach
