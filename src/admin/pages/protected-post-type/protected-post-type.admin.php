@@ -45,17 +45,27 @@
    * get the post types
    * @var array
    */
-  $args = array(
+  $pptargs = array(
       'public'   => true,
   );
-  $post_types = get_post_types( $args, 'objects' );
+  $getpost_types = get_post_types( $pptargs, 'objects' );
+
+  /**
+   * lets exclude these
+   * @var array
+   */
+  $excludedtypes = array();
+  $excludedtypes[] = 'elementor_library';
+  $excludedtypes[] = 'elementor-hf';
+  $excludedtypes[] = 'membersonly';
 
 
   /**
    * Get The Public Post Types
    * @var [type]
    */
-  foreach ( $post_types  as $post_type ) {
+  foreach ( $getpost_types  as $post_type ) {
+
 
     /**
      *  checked or not
@@ -69,6 +79,13 @@
     $ptt_status = 'style=" background-color: #F5F5F5;color: #555555; padding: 8px;"';
   }
 
+  /**
+   * exclude
+   * @var [type]
+   */
+  if (in_array($post_type->name,$excludedtypes)) {
+    // code...
+  } else {
     /**
      * build out the checkboxes
      * @var [type]
@@ -77,9 +94,12 @@
     echo '<span '.$dashicon_style.' class="wp-menu-image wll-small-admin-dashicons '.$post_type->menu_icon.'"></span>';
     echo '<input type="checkbox" name="pptname['.$post_type->name.']" value="'.$post_type->name.'" '.$checkprotected.'>';
     echo '<label for="'.$post_type->name.'">';
-    _e($post_type->labels->singular_name);
+    _e($post_type->labels->singular_name.' <span style="font-size: smaller;color: #a59b9b;"> '.$post_type->name.'</span>');
     echo '</label>';
     echo '</div>';
+  }
+
+
   } // end foreach
   echo '<p/>';
 
