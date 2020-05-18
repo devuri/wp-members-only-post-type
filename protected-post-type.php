@@ -5,7 +5,7 @@
  * Description: Members Only Post Type will Protected Post Types
  * Author:      SwitchWebdev.com
  * Author URI:  https://switchwebdev.com
- * Version:     1.2.0
+ * Version:     1.3.0
  * License:     GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: members-only-post-type
@@ -42,7 +42,7 @@
     }
 
   # plugin directory
-	  define("WPMPT_VERSION", '1.2.0');
+	  define("WPMPT_VERSION", '1.3.0');
 
   # plugin directory
     define("WPMPT_DIR", dirname(__FILE__));
@@ -53,14 +53,12 @@
 
   /**
   * require_once // Load the main class.
-  * @var [type]
   */
   require_once plugin_dir_path( __FILE__ ) . '/src/class-protected-post-type.php';
 
 
   /**
    * setup options on activation
-   * @var [type]
    */
   register_activation_hook( __FILE__, 'wpmpt_activation' );
   function wpmpt_activation() {
@@ -72,15 +70,13 @@
 
 	/**
 	 * initiate the Protected_Post_Type
-	 * @var [type]
 	 */
 	new Members_Only_Post_Type\Protected_Post_Type();
 #------------------------------------------------------------------------------
 /**
  * Load admin page
- * @var [type]
  */
-require_once WPMPT_DIR . '/vendor/wp-admin-page/AdminPage.php';
+require_once plugin_dir_path( __FILE__ ) . '/vendor/wp-admin-page/AdminPage.php';
 
 // admin page
 require_once plugin_dir_path( __FILE__ ). 'src/admin/class-protected-post-admin.php';
