@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: membership, custom post type, cpt, post type, manage post type, restrict content, custom post types, restrict access
 Requires at least: 3.4
 Tested up to: 5.4
-Stable tag: 1.3.0
+Stable tag: 1.3.3
 Requires PHP: 5.6
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
