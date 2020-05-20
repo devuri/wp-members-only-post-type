@@ -1,4 +1,4 @@
-> **Note:** This is the development version and contains features that may be in various stages of development. If you want to use this on a live website download here: [Members Only Post Type for WordPress](https://github.com/devuri/members-only-post-type/releases/).
+> **Note:** This is the development version and contains features that may be in various stages of development. If you want to use this on a live website download here: [Members Only Post Type for WordPress](https://wordpress.org/plugins/members-only-post-type/).
 
 ## Members Only Post Type
 Protected Post Type protect post types.
