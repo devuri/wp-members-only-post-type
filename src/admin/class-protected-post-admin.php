@@ -22,6 +22,18 @@ final class Protected_Post_Type_Admin extends AdminPage {
     $menu[] = null;
     $menu[] = 'ppt';
     $menu[] = plugin_dir_path( __FILE__ );
+    //$menu[] = false;
+    return $menu;
+  }
+
+  /**
+   * submenu items
+   * @return [type] [description]
+   */
+  private static function submenu(){
+    $menu = array();
+    $menu[] = 'Protected';
+    $menu[] = 'Access Level';
     return $menu;
   }
 
@@ -30,8 +42,8 @@ final class Protected_Post_Type_Admin extends AdminPage {
    * @return [type] [description]
    */
   public static function init(){
-    return new Protected_Post_Type_Admin(self::admin_menu());
+    return new Protected_Post_Type_Admin(self::admin_menu(),self::submenu());
   }
 }
-  // create admin pages
+
   Protected_Post_Type_Admin::init();
