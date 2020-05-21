@@ -154,6 +154,12 @@ if (!class_exists('WPAdminPage\AdminPage')) {
     private $mcolor = '#0071A1';
 
     /**
+     * To hide the submenu link from a top level menu
+     * @var boolean
+     */
+    private $display_submenulink = true;
+
+    /**
      * Initialization
      *
      * @param array $main_menu     Main menu
@@ -181,8 +187,10 @@ if (!class_exists('WPAdminPage\AdminPage')) {
       $this->position     = $main_menu[6];
       $this->prefix       = $main_menu[7];
       $this->plugin_path  = $main_menu[8];
-
-      //print_r(count($main_menu));
+      // show submenu link
+      if (isset($main_menu[9])) {
+        $this->display_submenulink  = $main_menu[9];
+      }
 
       // submenu
       $this->submenu_args = $submenu_items;
@@ -257,6 +265,17 @@ if (!class_exists('WPAdminPage\AdminPage')) {
      */
     public function admin_path(){
       return $this->plugin_path . 'pages/';
+    }
+
+    /**
+     * display submenu link items
+     */
+    private function display_submenu_link(){
+      if ($this->display_submenulink) {
+        return $this->menu_slug;
+      } else {
+        return null;
+      }
     }
 
     /**
@@ -527,7 +546,8 @@ if (!class_exists('WPAdminPage\AdminPage')) {
         }
           // build out the sub menu items
           add_submenu_page(
-            $this->menu_slug,
+            //$this->menu_slug,
+            $this->display_submenu_link(),
             ucfirst(__($submenu_item)),
             ucwords(__($submenu_item)),
             $this->capability,
