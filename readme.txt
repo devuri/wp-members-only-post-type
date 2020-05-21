@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: membership, custom post type, cpt, post type, manage post type, restrict content, custom post types, restrict access
 Requires at least: 3.4
 Tested up to: 5.4
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 Requires PHP: 5.6
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -31,9 +31,8 @@ Only if a user is logged in they will be able to access, the default access leve
 
 == Installation ==
 
-1. Upload iCEYi Members Only to the /wp-content/plugins/ directory.
+1. Upload to the /wp-content/plugins/ directory.
 2. Activate the plugin through the \'Plugins\' menu in WordPress.
-3. Use the shortcode [membersonly] protected content here [/membersonly] the user must be logged in to view.
 
 == Frequently Asked Questions ==
 
