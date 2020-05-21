@@ -3,26 +3,17 @@
 namespace WPAdminPage;
 use WPAdminPage\Admin\Form\FormHelper as Form;
 
-/**
- * ----------------------------------------------------------------------------
- * @copyright 	Copyright © 2020 Uriel Wilson.
- * @package   	AdminPage
- * @version   	4.0.2
- * @license   	GPL-2.0+
- * @author    	Uriel Wilson
- * @link      	https://github.com/devuri/wp-admin-page/
- *
- * ----------------------------------------------------------------------------
- */
-
-  if (!defined('ABSPATH')) exit;
-
-
   /**
-   * Load the FormHelper class
-   * @var object
+   * --------------------------------------------------------------------------
+   * @copyright 	Copyright © 2020 Uriel Wilson.
+   * @package   	AdminPage
+   * @version   	4.0.3
+   * @license   	GPL-2.0+
+   * @author    	Uriel Wilson
+   * @link      	https://github.com/devuri/wp-admin-page/
+   * --------------------------------------------------------------------------
    */
-  require_once plugin_dir_path( __FILE__ ) . 'Form/FormHelper.php';
+  if (!defined('ABSPATH')) exit;
 
 
 if (!class_exists('WPAdminPage\AdminPage')) {
@@ -31,7 +22,7 @@ if (!class_exists('WPAdminPage\AdminPage')) {
     /**
      * class version
      */
-    const ADMINVERSION = '4.0.1';
+    const ADMINVERSION = '4.0.3';
 
     /**
      * get the current plugin dir path
@@ -167,9 +158,11 @@ if (!class_exists('WPAdminPage\AdminPage')) {
      * @param array $admin_only special admin only menu
      * @since 1.0
      */
-
-    function __construct(array $main_menu, array $submenu_items = array(), array $admin_only = array()) {
-
+    public function __construct(
+        array $main_menu,
+        array $submenu_items = array(),
+        array $admin_only = array()
+    ) {
       /**
        * add the color scheme
        * use defualt if not defined
@@ -198,6 +191,19 @@ if (!class_exists('WPAdminPage\AdminPage')) {
       // Admin Only Settings Menu
       $this->settings_args = $admin_only;
 
+      // include files
+      $this->includes();
+
+      // actions
+      $this->wp_actions();
+
+    }
+
+    /**
+     * lets load our actions
+     * @return
+     */
+    public function wp_actions(){
       // ok lets create the menu
       add_action( 'admin_menu',array( $this, 'build_menu' ) );
 
@@ -206,6 +212,19 @@ if (!class_exists('WPAdminPage\AdminPage')) {
 
       // footer_separator
       add_action( 'swa_footer',array( $this, 'footer_separator' ) );
+    }
+
+    /**
+     * Include files.
+     * @since 1.0.0
+     */
+    private function includes() {
+
+      // includes
+      // Admin Form stuff
+      if ( is_admin() ) {
+        require_once plugin_dir_path( __FILE__ ) . 'Form/FormHelper.php';
+      }
     }
 
     /**
