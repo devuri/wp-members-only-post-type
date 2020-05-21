@@ -76,7 +76,8 @@
 /**
  * Load admin page
  */
-require_once plugin_dir_path( __FILE__ ) . '/vendor/wp-admin-page/AdminPage.php';
+//require_once plugin_dir_path( __FILE__ ) . '/vendor/wp-admin-page/src/AdminPage.php';
+require_once 'vendor/autoload.php';
 
 // admin page
 require_once plugin_dir_path( __FILE__ ). 'src/admin/class-protected-post-admin.php';
