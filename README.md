@@ -1,8 +1,9 @@
 > **Note:** This is the development version and contains features that may be in various stages of development. If you want to use this on a live website download here: [Members Only Post Type for WordPress](https://wordpress.org/plugins/members-only-post-type/).
 
-## Members Only Post Type
+# Members Only Post Type [![Build Status](https://travis-ci.com/devuri/members-only-post-type.svg?branch=master)](https://travis-ci.com/devuri/members-only-post-type)
 Protected Post Type protect post types.
 
+[![Build Status](https://travis-ci.com/devuri/members-only-post-type.svg?branch=master)](https://travis-ci.com/devuri/members-only-post-type)
 
 ![Protected Post Type Settings](https://user-images.githubusercontent.com/4777400/81521274-497c6080-930c-11ea-82c6-026992c0d440.png)
 
