@@ -1,6 +1,6 @@
 {
     "require": {
-        "devuri/wp-admin-page": "^1.0",
+        "devuri/wp-admin-page": "^1.0"
     },
     "require-dev": {
     "filp/whoops": "^2.5",
