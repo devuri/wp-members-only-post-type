@@ -1,7 +1,6 @@
 {
     "require": {
         "devuri/wp-admin-page": "^1.0",
-        "symfony/error-handler": "^5.0"
     },
     "require-dev": {
     "filp/whoops": "^2.5",
