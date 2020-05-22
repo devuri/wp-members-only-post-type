@@ -5,7 +5,7 @@
  * Description: Members Only Post Type will Protected Post Types
  * Author:      SwitchWebdev.com
  * Author URI:  https://switchwebdev.com
- * Version:     1.5.2
+ * Version:     1.5.3
  * License:     GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: members-only-post-type
@@ -42,7 +42,7 @@
     }
 
   # plugin directory
-	  define("WPMPT_VERSION", '1.5.2');
+	  define("WPMPT_VERSION", '1.5.3');
 
   # plugin directory
     define("WPMPT_DIR", dirname(__FILE__));
