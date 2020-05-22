@@ -42,7 +42,7 @@ final class Protected_Post_Type_Admin extends AdminPage {
    * @return [type] [description]
    */
   public static function init(){
-    return new Protected_Post_Type_Admin(self::admin_menu(),self::submenu());
+    return new Protected_Post_Type_Admin(self::admin_menu());
   }
 }
 
