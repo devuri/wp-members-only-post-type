@@ -5,4 +5,5 @@ php:
 before_script:
   - composer install
   - composer update
-script: echo "Success!"
+script:
+- echo "skipping tests"
