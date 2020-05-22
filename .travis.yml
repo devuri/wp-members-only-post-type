@@ -8,5 +8,8 @@ php:
 before_script:
  - composer self-update
  - composer install --prefer-source --no-interaction
+branches:
+  only: 
+    - master
 script:
 - echo "skipping tests"
