@@ -1,15 +1,13 @@
 language: php
 php:
   - '5.6'
-  - '7.0'
-  - '7.1'
   - '7.2'
   - '7.4'
 before_script:
  - composer self-update
  - composer install --prefer-source --no-interaction
 branches:
-  only: 
+  only:
     - master
 script:
 - echo "skipping tests"
