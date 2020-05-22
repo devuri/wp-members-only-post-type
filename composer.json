@@ -1,5 +1,11 @@
 {
     "require": {
-        "devuri/wp-admin-page": "^1.0"
-    }
+        "devuri/wp-admin-page": "^1.0",
+        "symfony/error-handler": "^5.0"
+    },
+    "require-dev": {
+    "filp/whoops": "^2.5",
+    "phpunit/phpunit": "^7",
+    "symfony/var-dumper": "^5.0"
+  }
 }
