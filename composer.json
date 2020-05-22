@@ -5,6 +5,7 @@
     "require-dev": {
     "filp/whoops": "^2.5",
     "phpunit/phpunit": "^7",
+    "symfony/error-handler": "^5.0",
     "symfony/var-dumper": "^5.0"
   }
 }
