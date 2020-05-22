@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "devuri/wp-admin-page",
-            "version": "1.1.3",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devuri/wp-admin-page.git",
-                "reference": "4d74f64eb0872a80443fa4c23a7393cee2f8846b"
+                "reference": "bbe8fc134ec0b59a84e6d259fa913688ed597d3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devuri/wp-admin-page/zipball/4d74f64eb0872a80443fa4c23a7393cee2f8846b",
-                "reference": "4d74f64eb0872a80443fa4c23a7393cee2f8846b",
+                "url": "https://api.github.com/repos/devuri/wp-admin-page/zipball/bbe8fc134ec0b59a84e6d259fa913688ed597d3a",
+                "reference": "bbe8fc134ec0b59a84e6d259fa913688ed597d3a",
                 "shasum": ""
             },
             "require": {
@@ -31,7 +31,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-3.0"
+                "GPL-2.0"
             ],
             "authors": [
                 {
@@ -46,7 +46,7 @@
                 "wordpress",
                 "wp"
             ],
-            "time": "2020-05-21T21:58:32+00:00"
+            "time": "2020-05-22T01:13:20+00:00"
         }
     ],
     "packages-dev": [],

@@ -34,9 +34,9 @@ final class Protected_Post_Type_Admin extends AdminPage {
     $menu = array();
     $menu[] = 'Protected';
     $menu[] = 'Access Level'; // set the access level required to view
-    $menu[] = 'Redirect Rule'; // allow the user to set redirect page
-    $menu[] = 'Custom Message'; // allow the user to set redirect page
-    $menu[] = 'CTA'; // allow the user to set redirect page
+    //$menu[] = 'Redirect Rule'; // allow the user to set redirect page
+    //$menu[] = 'Custom Message'; // allow the user to set redirect page
+    //$menu[] = 'CTA'; // allow the user to set redirect page
     return $menu;
   }
 
