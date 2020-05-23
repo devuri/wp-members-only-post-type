@@ -1,4 +1,4 @@
-=== Members Only Post Type ===
+=== Members Only Post Type Membership ===
 Contributors: icelayer, sirwil
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6D6W2KXB88NKE
 Tags: membership, custom post type, cpt, post type, manage post type, restrict content, custom post types, restrict access
