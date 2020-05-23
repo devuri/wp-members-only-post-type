@@ -76,7 +76,7 @@
 /**
  * Load admin page class via composer
  */
-require_once 'vendor/autoload.php';
+require_once plugin_dir_path( __FILE__ ). 'vendor/autoload.php';
 
 // admin page
 require_once plugin_dir_path( __FILE__ ). 'src/admin/class-protected-post-admin.php';
