@@ -49,4 +49,8 @@ final class Protected_Post_Type_Admin extends AdminPage {
   }
 }
 
+  /**
+   * setup the admin page
+   * @var [type]
+   */
   Protected_Post_Type_Admin::init();

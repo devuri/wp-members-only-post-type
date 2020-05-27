@@ -5,7 +5,7 @@
  * Description: Members Only Post Type will Protected Post Types
  * Author:      SwitchWebdev.com
  * Author URI:  https://switchwebdev.com
- * Version:     1.5.4
+ * Version:     1.5.5
  * License:     GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: members-only-post-type
@@ -76,7 +76,7 @@
 /**
  * Load admin page class via composer
  */
-require_once 'vendor/autoload.php';
+require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 
 // admin page
-require_once plugin_dir_path( __FILE__ ). 'src/admin/class-protected-post-admin.php';
+require_once plugin_dir_path( __FILE__ ) . 'src/admin/class-protected-post-admin.php';
