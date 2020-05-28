@@ -1,39 +1,26 @@
 <?php
 /**
- * Plugin Name: Members Only Post Type
- * Plugin URI:  https://switchwebdev.com/wordpress-plugins/
- * Description: Members Only Post Type will Protected Post Types
- * Author:      SwitchWebdev.com
- * Author URI:  https://switchwebdev.com
- * Version:     1.5.5
- * License:     GPLv2
- * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain: members-only-post-type
- * Domain Path: languages
- * Usage:
- * Tags:
+ * Members Only Post Type
  *
- * Requires PHP: 5.6+
- * Tested up to PHP: 7.0
+ * @package           MembersOnlyPostType
+ * @author            Uriel Wilson
+ * @copyright         2020 Uriel Wilson
+ * @license           GPL-2.0
+ * @link           		https://urielwilson.com
  *
- * Copyright 2020 Uriel Wilson, support@switchwebdev.com
- * License: GNU General Public License
- * GPLv2 Full license details in license.txt
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- * ----------------------------------------------------------------------------
- * @category  	Plugin
- * @copyright 	Copyright © 2020 Uriel Wilson.
- * @package   	MembersOnlyPostType
- * @author    	Uriel Wilson
- * @link      	https://switchwebdev.com
- *  ----------------------------------------------------------------------------
+ * @wordpress-plugin
+ * Plugin Name:       Members Only Post Type
+ * Plugin URI:        https://switchwebdev.com/wordpress-plugins/
+ * Description:       Members Only Post Type will Protected and Restrict access to custom Post Types
+ * Version:           1.5.5
+ * Requires at least: 3.4
+ * Requires PHP:      5.6
+ * Author:            SwitchWebdev.com
+ * Author URI:        https://switchwebdev.com
+ * Text Domain:       members-only-post-type
+ * Domain Path:       languages
+ * License:           GPLv2
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
   # deny direct access
