@@ -12,7 +12,7 @@
  * Plugin Name:       Members Only Post Type
  * Plugin URI:        https://switchwebdev.com/wordpress-plugins/
  * Description:       Members Only Post Type will Protected and Restrict access to custom Post Types
- * Version:           1.5.6
+ * Version:           1.6.0
  * Requires at least: 3.4
  * Requires PHP:      5.6
  * Author:            SwitchWebdev.com
@@ -29,20 +29,22 @@
     }
 
   # plugin directory
-	  define("WPMPT_VERSION", '1.5.6');
+	  define("WPMPT_VERSION", '1.6.0');
 
   # plugin directory
     define("WPMPT_DIR", dirname(__FILE__));
 
   # plugin url
     define("WPMPT_URL", plugins_url( "/",__FILE__ ));
-#  -----------------------------------------------------------------------------
+
 
   /**
-  * require_once // Load the main class.
-  */
-  require_once plugin_dir_path( __FILE__ ) . '/src/class-protected-post-type.php';
+   * Load admin page class via composer
+   */
+  require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 
+
+#  -----------------------------------------------------------------------------
 
   /**
    * setup options on activation
@@ -53,17 +55,15 @@
     update_option('wp_protected_post_types', $protected_defualts );
   }
 
-
+#------------------------------------------------------------------------------
 
 	/**
 	 * initiate the Protected_Post_Type
 	 */
-	new Members_Only_Post_Type\Protected_Post_Type();
-#------------------------------------------------------------------------------
-/**
- * Load admin page class via composer
- */
-require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
+	new MembersOnlyPostType\ProtectedPostType();
 
-// admin page
-require_once plugin_dir_path( __FILE__ ) . 'src/admin/class-protected-post-admin.php';
+  /**
+   * setup the admin page
+   * @var [type]
+   */
+  MembersOnlyPostType\Admin\ProtectedPostTypeAdmin::init();

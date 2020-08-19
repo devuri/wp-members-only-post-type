@@ -1,10 +1,10 @@
 <?php
 
-namespace Members_Only_Post_Type;
+namespace MembersOnlyPostType;
 /**
  * Protected Class
  */
-final class Protected_Post_Type {
+final class ProtectedPostType {
 
 	function __construct() {
 		add_filter('the_content', array( $this , 'protected_post'), 99);

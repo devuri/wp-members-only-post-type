@@ -1,8 +1,10 @@
 <?php
 
-use WPAdminPage\AdminPage;
+namespace MembersOnlyPostType\Admin;
 
-final class Protected_Post_Type_Admin extends AdminPage {
+  use MembersOnlyPostType\WPAdminPage\AdminPage;
+
+final class ProtectedPostTypeAdmin extends AdminPage {
 
   /**
    * admin_menu()
@@ -12,17 +14,16 @@ final class Protected_Post_Type_Admin extends AdminPage {
    */
   private static function admin_menu(){
     $menu = array();
-    $menu[] = '#ba315c';
-    $menu[] = 'Members Only Post Type Settings';
-    $menu[] = 'Protected Posts';
-    $menu[] = 'manage_options';
-    $menu[] = 'protected-post-type';
-    $menu[] = 'protectedposttypes_callback';
-    $menu[] = 'dashicons-vault';
-    $menu[] = null;
-    $menu[] = 'ppt';
-    $menu[] = plugin_dir_path( __FILE__ );
-    //$menu[] = false;
+    $menu['mcolor']       = '#ba315c';
+    $menu['page_title']   = 'Members Only Post Type Settings';
+    $menu['menu_title']   = 'Protected Posts';
+    $menu['capability']   = 'manage_options';
+    $menu['menu_slug']    = 'protected-post-type';
+    $menu['function']     = 'protectedposttypes_callback';
+    $menu['icon_url']     = 'dashicons-vault';
+    $menu['position']     = null;
+    $menu['prefix']       = 'ppt';
+    $menu['plugin_path']  = plugin_dir_path( __FILE__ );
     return $menu;
   }
 
@@ -45,12 +46,6 @@ final class Protected_Post_Type_Admin extends AdminPage {
    * @return [type] [description]
    */
   public static function init(){
-    return new Protected_Post_Type_Admin(self::admin_menu());
+    return new ProtectedPostTypeAdmin(self::admin_menu());
   }
 }
-
-  /**
-   * setup the admin page
-   * @var [type]
-   */
-  Protected_Post_Type_Admin::init();
