@@ -7,17 +7,24 @@ namespace Composer\Autoload;
 class ComposerStaticInitbe5ae18ccbb49c95c9c2bd7a216f3867
 {
     public static $prefixLengthsPsr4 = array (
-        'W' => 
+        'M' => 
         array (
-            'WPAdminPage\\' => 12,
+            'MembersOnlyPostType\\' => 20,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'WPAdminPage\\' => 
+        'MembersOnlyPostType\\' => 
         array (
-            0 => __DIR__ . '/..' . '/devuri/wp-admin-page/src',
+            0 => __DIR__ . '/../..' . '/src',
         ),
+    );
+
+    public static $classMap = array (
+        'MembersOnlyPostType\\Admin\\ProtectedPostTypeAdmin' => __DIR__ . '/../..' . '/src/Admin/ProtectedPostTypeAdmin.php',
+        'MembersOnlyPostType\\ProtectedPostType' => __DIR__ . '/../..' . '/src/ProtectedPostType.php',
+        'MembersOnlyPostType\\WPAdminPage\\AdminPage' => __DIR__ . '/../..' . '/src/WPAdminPage/AdminPage.php',
+        'MembersOnlyPostType\\WPAdminPage\\FormHelper' => __DIR__ . '/../..' . '/src/WPAdminPage/FormHelper.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -25,6 +32,7 @@ class ComposerStaticInitbe5ae18ccbb49c95c9c2bd7a216f3867
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitbe5ae18ccbb49c95c9c2bd7a216f3867::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitbe5ae18ccbb49c95c9c2bd7a216f3867::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitbe5ae18ccbb49c95c9c2bd7a216f3867::$classMap;
 
         }, null, ClassLoader::class);
     }
