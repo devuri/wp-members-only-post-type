@@ -40,7 +40,7 @@
 		<hr/>
 		<div class="description">
 		    <?php
-				_e( 'Set the Post types that you would like to be Members Only Access',  ); // @codingStandardsIgnoreLine
+				_e( 'Set the Post types that you would like to be Members Only Access'  ); // @codingStandardsIgnoreLine
 			?>
 		</div>
 	<p/>
@@ -89,9 +89,9 @@
 		     */
 		    echo '<div ' . esc_attr( $ptt_status ) . ' id="ppt_wrap ' . esc_attr( $post_type->name ) . '" >';
 		    echo '<span ' . esc_attr( $dashicon_style ) . ' class="wp-menu-image wll-small-admin-dashicons ' . esc_attr( $post_type->menu_icon ) . '"></span>';
-		    echo '<input type="checkbox" name="pptname[' . esc_attr( $post_type->name ) . ']" value="' . esc_attr( $post_type->name ) . '" ' . esc_attr( $checkprotected ) . '>';
-		    echo '<label for="' . esc_attr( $post_type->name ) . '">';
-		    $post_type->labels->singular_name . ' <span style="font-size: smaller;color: #a59b9b;"> ' . $post_type->name . '</span>';
+		    echo ' <input type="checkbox" name="pptname[' . esc_attr( $post_type->name ) . ']" value="' . esc_attr( $post_type->name ) . '" ' . esc_attr( $checkprotected ) . '> ';
+		    echo '<label for="' . esc_attr( $post_type->name ) . '"> ';
+		    echo esc_attr( $post_type->labels->singular_name ) . ' <span style="font-size: smaller;color: #a59b9b;"> ' . esc_attr( $post_type->name ) . '</span>';
 		    echo '</label>';
 		    echo '</div>';
 		}
