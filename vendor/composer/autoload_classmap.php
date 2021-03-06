@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'MembersOnlyPostType\\Admin\\ProtectedPostTypeAdmin' => $baseDir . '/src/Admin/ProtectedPostTypeAdmin.php',
     'MembersOnlyPostType\\ProtectedPostType' => $baseDir . '/src/ProtectedPostType.php',
     'MembersOnlyPostType\\WPAdminPage\\AdminPage' => $baseDir . '/src/WPAdminPage/AdminPage.php',

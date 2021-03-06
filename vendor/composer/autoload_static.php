@@ -21,6 +21,7 @@ class ComposerStaticInitbe5ae18ccbb49c95c9c2bd7a216f3867
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'MembersOnlyPostType\\Admin\\ProtectedPostTypeAdmin' => __DIR__ . '/../..' . '/src/Admin/ProtectedPostTypeAdmin.php',
         'MembersOnlyPostType\\ProtectedPostType' => __DIR__ . '/../..' . '/src/ProtectedPostType.php',
         'MembersOnlyPostType\\WPAdminPage\\AdminPage' => __DIR__ . '/../..' . '/src/WPAdminPage/AdminPage.php',
