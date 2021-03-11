@@ -12,7 +12,7 @@
  * Plugin Name:       Members Only Post Type
  * Plugin URI:        https://switchwebdev.com/wordpress-plugins/
  * Description:       Members Only Post Type will Protected and Restrict access to custom Post Types
- * Version:           1.6.7
+ * Version:           1.6.9
  * Requires at least: 3.4
  * Requires PHP:      5.6
  * Author:            Uriel Wilson
