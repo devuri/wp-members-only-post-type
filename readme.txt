@@ -3,7 +3,7 @@ Contributors: icelayer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6D6W2KXB88NKE
 Tags: membership, custom post type, cpt, post type, manage post type, restrict content, custom post types, restrict access
 Requires at least: 3.4
-Tested up to: 5.5
+Tested up to: 5.7
 Stable tag: 1.6.7
 Requires PHP: 5.6
 License: GNU Version 2 or Any Later Version
