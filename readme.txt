@@ -2,9 +2,9 @@
 Contributors: icelayer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6D6W2KXB88NKE
 Tags: membership, custom post type, cpt, post type, manage post type, restrict content, custom post types, restrict access
-Requires at least: 3.4
+Requires at least: 4.6
 Tested up to: 5.7
-Stable tag: 1.6.9
+Stable tag: 1.7.0
 Requires PHP: 5.6
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,7 @@ Members Only Post Type will protect your post type content allowing only logged 
 
 == Description ==
 
-[Members Only Post Type](https://switchwebdev.com/wordpress-plugins/) will make it easy for you to protect your custom post type content.
+[Members Only Post Type](https://wpbrisko.com/wordpress-plugins/) will make it easy for you to protect your custom post type content.
 
 Restricting Access to a Post Type is easy after you activate the plugin, go to the Protected Posts Settings Menu in the admin, and select the Post Types that you would be protected and save, that's it, your post type will now be protected and only logged-in users will have access.
 

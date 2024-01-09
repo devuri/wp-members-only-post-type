@@ -10,7 +10,7 @@
  * @copyright Copyright © 2020 Uriel Wilson.
  * @package   MembersOnlyPostType
  * @author    Uriel Wilson
- * @link      https://switchwebdev.com
+ * @link      https://wpbrisko.com
  * ----------------------------------------------------------------------------
  */
 
@@ -20,8 +20,7 @@
 	}
 
 	// delete settings in the options table.
-  		delete_option( 'wp_protected_post_types' );
-
+  	delete_option( 'wp_protected_post_types' );
 
   	// finally clear the cache.
   	wp_cache_flush();

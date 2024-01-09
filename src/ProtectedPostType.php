@@ -34,19 +34,17 @@ final class ProtectedPostType {
 				// check login.
 				if ( is_user_logged_in() ) {
 				    return $content;
-				} else {
+				}
 
 			    /**
 			     * Check if view in protected content
 			     *
 			     * TODO Add this to the options table
 			     */
-			    if ( in_array( $post->post_type, $this->protected_ptypes(), true ) ) {
+			    if ( in_array( $post->post_type, $this->is_protected(), true ) ) {
 			    	return $this->members_only_message();
-			    } else {
-				    return $content;
 			    }
-		  	}
+				return $content;
 	  	}
 	}
 
@@ -55,9 +53,8 @@ final class ProtectedPostType {
 	 *
 	 * @return array
 	 */
-	private function protected_ptypes() {
-    $protected = get_option( 'wp_protected_post_types' );
-		return $protected;
+	private function is_protected() {
+		return get_option( 'wp_protected_post_types', array() );
 	}
 
 	/**
